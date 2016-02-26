@@ -1,6 +1,6 @@
 {
     "name": "michielroos/composer-downloader-git-shallow",
-    "type": "composer-plugin",
+    "type": "package",
     "license": "GPL-2.0+",
     "description": "Composer downloader",
     "keywords": [
