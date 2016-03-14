@@ -1,31 +1,34 @@
 {
-    "name": "michielroos/composer-downloader-git-shallow",
-    "license": "GPL-2.0+",
-    "description": "Composer shallow downloader",
-    "keywords": [
-        "downloader", "git", "shallow"
-    ],
-    "homepage": "https://github.com/Tuurlijk/composer-downloader-git-shallow",
-    "authors": [
-        {
-            "name": "Michiel Roos",
-            "email": "michiel@michielroos.com"
-        }
-    ],
-    "autoload": {
-        "psr-0": { "Composer\\Downloader\\": "Classes/"}
-    },
-    "minimum-stability": "dev",
-    "require": {
-        "composer-plugin-api": "^1.0.0"
-    },
-    "require-dev": {
-        "composer/composer": "1.*"
-    },
-    "extra": {
-        "class": "MichielRoos\\Composer\\GitShallowPlugin\\GitShallowPlugin",
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
+  "name": "michielroos/composer-downloader-git-shallow",
+  "license": "GPL-2.0+",
+  "description": "Composer shallow downloader",
+  "keywords": [
+    "downloader",
+    "git",
+    "shallow"
+  ],
+  "homepage": "https://github.com/Tuurlijk/composer-downloader-git-shallow",
+  "authors": [
+    {
+      "name": "Michiel Roos",
+      "email": "michiel@michielroos.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Composer\\Downloader\\": "Classes/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "composer-plugin-api": "^1.0.0"
+  },
+  "require-dev": {
+    "composer/composer": "1.*"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
 }
