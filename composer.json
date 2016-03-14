@@ -1,8 +1,7 @@
 {
     "name": "michielroos/composer-downloader-git-shallow",
-    "type": "package",
     "license": "GPL-2.0+",
-    "description": "Composer downloader",
+    "description": "Composer shallow downloader",
     "keywords": [
         "downloader", "git", "shallow"
     ],
@@ -14,7 +13,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "": "Classes/"}
+        "psr-0": { "Composer\\Downloader\\": "Classes/"}
     },
     "minimum-stability": "dev",
     "require": {
@@ -24,6 +23,7 @@
         "composer/composer": "1.*"
     },
     "extra": {
+        "class": "MichielRoos\\Composer\\GitShallowPlugin\\GitShallowPlugin",
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         }
