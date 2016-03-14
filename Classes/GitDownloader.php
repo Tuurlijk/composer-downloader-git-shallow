@@ -47,6 +47,7 @@ class GitDownloader extends VcsDownloader
         $flag = Platform::isWindows() ? '/D ' : '';
         $command = 'git clone --depth 100 --no-checkout %s %s && cd '.$flag.'%2$s && git remote add composer %1$s && git fetch composer';
         $this->io->writeError("    Cloning ".$ref);
+        $this->io->writeError("    Yess! with depth op 100 ".$ref);
 
         $commandCallable = function ($url) use ($ref, $path, $command) {
             return sprintf($command, ProcessExecutor::escape($url), ProcessExecutor::escape($path), ProcessExecutor::escape($ref));
